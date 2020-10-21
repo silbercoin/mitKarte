@@ -151,6 +151,12 @@ aside#sidebar .quote input{
   width:90%;
   padding:5px;
 }
+.quote select{
+  width:95%;
+}
+.quote option{
+  text-align: center;
+}
 
 aside .quote button{
   width:95%;
@@ -219,5 +225,7 @@ footer {
      width: 100%;
      margin-bottom: 5px;
    }
-
+   .quote option{
+    margin:10px;
+   }
 }
