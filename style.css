@@ -89,9 +89,18 @@ header a:hover{
   margin-bottom: 10px;
 }
 
-#shocase p {
+#showcase h3 {
 
   font-size: 20px;
+  color:#ffffff;
+}
+#showcase a {
+  background: #e8491e;
+  padding: 10px 10px;
+  text-decoration: none;
+  border-radius: 8px 8px 8px 8px;
+  color:#ffffff;
+  font-size:20px;
 }
 
 /* signup */
