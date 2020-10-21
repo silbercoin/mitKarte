@@ -1,5 +1,6 @@
 body{
-  font:15px / 1.5;
+  font:15px;
+  line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif; 
   padding: 0;
   margin: 0;
@@ -24,15 +25,15 @@ ul{
   border: 0;
   padding-left: 20px;
   padding-right: 20px;
-  color:#ffffff
+  color:#ffffff;
 }
 
 /*Header*/
 header{
   background-color: #35424a;
   color: #ffffff;
-  padding-top: 30px;
-  min-height: 70px;
+  padding-top: 10px;
+  min-height: 52px;
   border-bottom: #e8491e 3px solid;
 
 }
@@ -46,7 +47,7 @@ header a{
 
 header li{
   display: inline;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 15px 0px 15px;
 
 }
 
@@ -76,10 +77,10 @@ header a:hover{
 /* showcase */
 
 #showcase {
-  min-height: 500px;
-  background: url('/img/card payment.jpg') no-repeat 0-100px;
+  min-height: 630px;
+  background: url('/img/showcase.jpg') no-repeat 0-300px;
   text-align: center;
-  color:#35424a
+  color:#e8491d
 }
 
 #showcase h1 {
@@ -97,7 +98,7 @@ header a:hover{
 
 #signup {
 
-  padding:15px;
+  padding:0;
   color:#ffffff;
   background: #35424a;
 }
@@ -136,8 +137,43 @@ header a:hover{
 
 #boxes .box img{
 
-  width: 90px;
+  width: 80px;
+  
 }
+/* Sidebar */
+aside#sidebar{
+  float: right;
+  width:30%;
+  margin-top: 10px; 
+}
+/* sidebar quote */
+aside#sidebar .quote input{ 
+  width:90%;
+  padding:5px;
+}
+
+aside .quote button{
+  width:95%;
+  margin-top: 15px;
+}
+
+/* Main-col */
+
+article#main-col{
+  float:left;
+  width:65%;
+}
+/* Servies */
+ul#services li{
+  list-style: none;
+  border: #cccccc solid 1px;
+  background: #e6e6e6;
+}
+li .map{
+  width: 100%;
+
+}
+
 
 /* footer */
 
@@ -145,7 +181,7 @@ footer {
   text-align: center;
   color:#ffffff;
   background: #e8491d;
-  padding:20px;
+  padding:5px;
   margin-top: 20px;
 }
 
@@ -157,11 +193,13 @@ footer {
   header nav li,
   #signup h1,
   #signup form,
-  #boxes .box{
+  #boxes .box, article#main-col,
+  aside#sidebar{
     float:none;
     text-align: center;
     width: 100%;
   }
+
   header{
     padding-bottom: 20px;
   }
@@ -171,9 +209,15 @@ footer {
   #signup button{
     display:block;
     width: 100%;
+    margin-bottom: 10px;
+  }
+  .quote button {
+    margin-top: 30px;
+    width:95%
   }
    #signup form input[type='email']{
      width: 100%;
      margin-bottom: 5px;
    }
+
 }
