@@ -38,7 +38,11 @@
         <section id='signup'>
             <div class='container'>
                 <h1> Subscribe To Our News</h1>
-                <form id='contactForm'>
+                <form id='contactForm'name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden">
+                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
                     <input type='email' placeholder="Enter Email..." value='email' name='email' id='email'>
                     <button type='submit' class='button1'>Subscribe</button> 
                 </form>
